@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #141414;
+    color: rgb(240, 240, 240);
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+.hd2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.cnt {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+    color: rgb(190, 190, 190);
+    text-align: justify;
+}
+
+.sec {
+    margin-bottom: 20px;
+}
+
+.left-design-vertical-banner {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    height: 100vh;
+    width: max(5vw, 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#verticalLogo {
+    display: block;
+}
+
+#horizontalLogo {
+    display: none;
+}
+
+h1.title {
+    display: none;
+}
+
+.left-design-vertical-banner img {
+    width: 100%;
+    aspect-ratio: 96.64/164;
+}
+
+.landing-page {
+    margin-left: max(5vw, 100px);
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-page .desc {
+    width: 50%;
+    margin: 20px 0;
+}
+
+.landing-page .poster {
+    background-color: #000000;
+
+}
+
+.poster {
+    height: 100vh;
+    aspect-ratio: 636/1024;
+    clip-path: polygon(52% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
+    /* position sticky so that it sticks to the right */
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+
+@media screen and (max-width: 1140px) {
+    .landing-page .desc {
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 1060px) {
+    .poster {
+        display: none;
+    }
+
+    .left-design-vertical-banner {
+        position: inherit;
+        width: 100%;
+        height: unset;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 10px 20px;
+    }
+
+    #verticalLogo {
+        display: none;
+    }
+
+    #horizontalLogo {
+        display: block;
+    }
+
+    h1.title {
+        display: block;
+        flex-grow: 1;
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    .hd2 {
+        font-size: 1.75rem;
+    }
+
+    .cnt {
+        font-size: 1.15rem;
+    }
+
+    .left-design-vertical-banner img {
+        aspect-ratio: 164/96.64;
+        width: 10vw;
+    }
+
+    .landing-page {
+        margin: 0;
+        padding: 0;
+    }
+
+    .landing-page .desc {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1.title {
+        font-size: 1.5rem;
+    }
+
+    .hd2 {
+        font-size: 1.25rem;
+    }
+
+    .cnt {
+        font-size: 1rem;
+    }
+
+
+    .left-design-vertical-banner img {
+        width: 15vw;
+    }
+}
+@media screen and (max-width: 375px) {
+    button.btn{
+        font-size: 0.75rem;
+    }
+}
+
+
+button.btn {
+    cursor: pointer;
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 7.5px 20px;
+    outline: none;
+    color: rgb(248, 248, 248);
+}
+
+
+
+.like  {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.like button.btn {
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    aspect-ratio: 1;
+    padding: 10px;
+}
+
+.like button.btn.liked {
+    color: #FF8230;
+    border-color: #FF8230;
+
+
+}
+
+div.btn.cnt {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+ul.statistics {
+    margin: 40px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+    color: rgb(248, 248, 248);
+
+}
+
+hr.sec-sep{
+    width: max(20%,100px);
+    display: block;
+    margin: 40px  auto;
+}
