@@ -79,23 +79,23 @@ function App() {
               <ul className="statistics">
                 <li>
                   <FontAwesomeIcon icon={faEye} /> &nbsp; : &nbsp;
-                  {"25k+"}
+                  {counts.visits === -1 ? "Loading..." : `${nFormatter(counts.visits)}+`}
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faThumbsUp} /> &nbsp; : &nbsp;
-                  {"12k+"}
+                  {counts.likes === -1 ? "Loading..." : `${nFormatter(counts.likes)}+`}
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faBookOpen} /> &nbsp; : &nbsp;
-                  {"17k+"}
+                  {counts.reads === -1 ? "Loading..." : `${nFormatter(counts.reads)}+`}
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faDownload} /> &nbsp; : &nbsp;
-                  {"10k+"}
+                  {counts.downloads === -1 ? "Loading..." : `${nFormatter(counts.downloads)}+`}
                 </li>
               </ul>
               <div className="btn cnt">
-                <a onClick={() => getData("hit", "reads")} href="https://heyzine.com/flip-book/09978ac5de.html" target="_blank" rel="noreferrer"> <button className='cnt btn'>Read Now  &nbsp;&nbsp; <FontAwesomeIcon icon={faBookOpen} className='icon' />
+                <a onClick={() => getData("hit", "reads")} href="https://heyzine.com/flip-book/09978ac5de.html" target="_blank"> <button className='cnt btn'>Read Now  &nbsp;&nbsp; <FontAwesomeIcon icon={faBookOpen} className='icon' />
                 </button></a>
                 <a onClick={() => getData("hit", "downloads")} download={true} href="./Assets/Kavi Nimantran Sample.pdf"> <button className='cnt btn'>Download Now &nbsp; &nbsp; <FontAwesomeIcon icon={faDownload} className='icon' />
                 </button></a>
@@ -135,7 +135,7 @@ function App() {
           <div className="sec">
             <div className="hd2">About the Poet</div>
             <div className="cnt">
-              Shivansh Shalabh is a 18 yr. old high school student from Kolkata. He is a budding entrepreneur and a full-stack web developer.
+              Shivansh Shalabh is a 17 yr. old high school student from Kolkata. He is a budding entrepreneur and a full-stack web developer.
               <br />
               Creating a change in society is what drives him towards technopreneurship and volunteering. He currently has two startups running at micro levels in the field of education and social good. He started his journey of change-making in his tenth grade and over the course of 2 yrs. he has impacted hundreds of life and received national recognition from prestigious organizations like Google for his initiatives.
               <br />
